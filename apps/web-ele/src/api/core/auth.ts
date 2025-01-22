@@ -21,8 +21,8 @@ export namespace AuthApi {
 /**
  * 登录
  */
-export async function loginApi(data: AuthApi.LoginParams) {
-  return requestClient.post<AuthApi.LoginResult>('/auth/login', data);
+export async function loginByAccount(data: AuthApi.LoginParams) {
+  return baseRequestClient.post<AuthApi.LoginResult>('/loginByAccount', data);
 }
 
 /**

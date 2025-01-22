@@ -8,11 +8,17 @@ declare module 'vue-router' {
 }
 
 export interface VbenAdminProAppConfigRaw {
+  // api 请求地址
   VITE_GLOB_API_URL: string;
+  VITE_GLOB_PERMISSION_API: string;
+  VUE_APP_SSO_LOGIN_URL: string;
+  VUE_APP_SSO_URL: string;
+  VUE_APP_SYS_TYPE: number;
 }
 
 export interface ApplicationConfig {
   apiURL: string;
+  permissionApi: string;
 }
 
 declare global {
